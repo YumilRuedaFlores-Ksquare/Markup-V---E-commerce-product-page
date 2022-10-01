@@ -26,9 +26,52 @@
                 <img src="./img/monito.png" alt="monito">
             </div>
         </div>
-
-        
     </nav>
+    <div class="container">
+        <div class="image-container">
+            <img src="./img/Product_MarkupV.jpg" alt="product">
+            <div class="multi-images">
+                <img id="image-1" src="./img/Product_MarkupV.jpg" alt="product">
+                <img id="image-2" src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/8da94e57-697b-4c8f-a4e8-e872920962a7/calzado-air-force-1-07-60-next-nature-DzxWgp.png" alt="product">
+                <img id="image-3" src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/a3e83ff3-bc17-4694-a8f9-81e1ec646bb3/calzado-air-force-1-07-60-next-nature-DzxWgp.png" alt="product">
+                <img id="image-4" src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/d054947c-b6e9-4f56-a172-512195a88e9c/calzado-air-force-1-07-60-next-nature-DzxWgp.png" alt="product">
+            </div>
+        </div>
+
+        <div class="text-container">
+            <div class="content">
+                <span>SNEAKER COMPANY</span>
+                <h2> Fall Limited Edition Sneakers</h2>
+                <span>These low-profile sneakers are your perfect casual wear companio. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</span>
+    
+                <span id="Price">$125.0 <span id="Offert">50%</span> </span> 
+                <span id="last_price"> $250</span>
+    
+                <div>
+                    <button onclick="myFunctionLess()" class="less" >-</button>
+                        <input id="input_number" min="0"  type="number" value="0" >
+                        <button  onclick="myFunctionPlus()" class="plus">+</button>
+                    <script>
+                        function myFunctionLess() {
+                            const input =  document.getElementById("input_number");
+                            if(parseInt(input.value) != 0){
+                                input.value = parseInt(input.value) -1;
+                            }
+                        }
+
+                        function myFunctionPlus() {
+                            const input =  document.getElementById("input_number");
+                            input.value = 1 + parseInt(input.value);
+                        }
+                    </script>
+                </div>
+                    
+                
+                        
+                
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>

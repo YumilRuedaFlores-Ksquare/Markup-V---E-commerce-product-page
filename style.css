@@ -2,6 +2,8 @@ body{
     background-color:aliceblue;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+/* Top bar: NAV*/
+
 nav{
     display: flex;
     width: 100%;
@@ -53,3 +55,66 @@ nav img{
     height: auto;
     width: 40px;
 }
+
+/* Content*/
+
+/*LEFT*/
+.container{ 
+    display: flex;
+    flex-direction: row;
+    padding-top: 5%;
+    background-color: #6a6969;
+}
+
+.container .image-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color:#f43c80;
+}
+
+.image-container img{
+    width: 50%;
+    border-radius: 8px;
+    margin: 3%;
+}
+
+
+.multi-images{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    background-color: #000000;
+    justify-content: space-between;
+}
+
+.multi-images img{
+    width: 19%;
+    height: auto;
+    max-height: 75px;
+}
+
+/*RIGHT*/
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.container .text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color:#5e3cf4;
+    text-align: left;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
