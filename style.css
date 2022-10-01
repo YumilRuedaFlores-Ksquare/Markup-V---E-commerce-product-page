@@ -1,0 +1,55 @@
+body{
+    background-color:aliceblue;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    display: flex;
+    width: 100%;
+    background-color: #ffffff;
+    justify-content:flex-start;
+    padding-bottom: 10px;
+    border-bottom: solid #000000 0.1px;
+
+}
+nav  a{ /* tous les liens a à l'intérieur de la balise nav */
+    float: left; /* effet flottant */
+    text-decoration: none; /* pas d'héritage avec effet souligné */
+    color: #6a6969; /* couleur du texte */
+    background: #ffffff; /* couleur de fond */
+    height: fit-content; /* hauteur */
+    line-height: 33px; /* interligne */
+    padding: 0 10px; /* marges intérieur */
+    font-size: 13px; /* taille du texte */
+    transition: .5s; /* temps de transition lors du hover : une demi seconde */
+    display: flex;
+    margin-top: 5px;    
+    font-weight: 400;
+    }
+nav  a:hover{ /* tous liens lors du survol dans la balise nav */
+    background: #f43c80; /* couleur de fond */
+    float: left;
+}
+nav img{
+    float: left;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.top_right{
+    display: flex;
+    align-items: flex-end;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+
+.top_right :first-child{
+    width: 18px;
+}
+
+.top_right :last-child{
+    border-radius: 100%;
+    height: auto;
+    width: 40px;
+}
