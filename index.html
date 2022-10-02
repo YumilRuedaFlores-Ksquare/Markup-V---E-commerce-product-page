@@ -40,30 +40,39 @@
 
         <div class="text-container">
             <div class="content">
-                <span>SNEAKER COMPANY</span>
-                <h2> Fall Limited Edition Sneakers</h2>
-                <span>These low-profile sneakers are your perfect casual wear companio. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</span>
+                <span id="company" >SNEAKER COMPANY</span>
+                <h1> Fall Limited Edition Sneakers</h1>
+                <span id="description" >These low-profile sneakers are your perfect casual wear companio. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</span>
     
-                <span id="Price">$125.0 <span id="Offert">50%</span> </span> 
-                <span id="last_price"> $250</span>
+                <span id="price">$125.00 <span id="offert">50%</span> </span> 
+                <span id="last_price"> $250.00</span>
     
-                <div>
-                    <button onclick="myFunctionLess()" class="less" >-</button>
-                        <input id="input_number" min="0"  type="number" value="0" >
+                <div class="car">
+                    <div class="plusless">
+                        <button onclick="myFunctionLess()" class="less" >-</button>
+                            <input id="input_number" min="0"  type="number" value="0" >
                         <button  onclick="myFunctionPlus()" class="plus">+</button>
-                    <script>
-                        function myFunctionLess() {
-                            const input =  document.getElementById("input_number");
-                            if(parseInt(input.value) != 0){
-                                input.value = parseInt(input.value) -1;
+                        <script>
+                            function myFunctionLess() {
+                                const input =  document.getElementById("input_number");
+                                if(parseInt(input.value) != 0){
+                                    input.value = parseInt(input.value) -1;
+                                }
                             }
-                        }
 
-                        function myFunctionPlus() {
-                            const input =  document.getElementById("input_number");
-                            input.value = 1 + parseInt(input.value);
-                        }
-                    </script>
+                            function myFunctionPlus() {
+                                const input =  document.getElementById("input_number");
+                                input.value = 1 + parseInt(input.value);
+                            }
+                        </script>
+                    </div>
+                    
+                    <button id="add-to-car"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-cart2" viewBox="0 0 16 16">
+                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                          </svg>
+                        Add to cart
+                    </button>
                 </div>
                     
                 
